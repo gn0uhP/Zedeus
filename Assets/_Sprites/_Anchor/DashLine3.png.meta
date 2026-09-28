@@ -1,0 +1,689 @@
+fileFormatVersion: 2
+guid: 627864fa13b425a4bb48cd23172aed19
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6065088002069481221
+    second: DashLine3_0
+  - first:
+      213: -5210164366858628329
+    second: DashLine3_1
+  - first:
+      213: 3295052647735648270
+    second: DashLine3_2
+  - first:
+      213: 427220518448252950
+    second: DashLine3_3
+  - first:
+      213: -2826384656422555303
+    second: DashLine3_4
+  - first:
+      213: 1254417680958714946
+    second: DashLine3_5
+  - first:
+      213: 4651533736998559416
+    second: DashLine3_6
+  - first:
+      213: -5864562459065479075
+    second: DashLine3_7
+  - first:
+      213: 2502673668335277274
+    second: DashLine3_8
+  - first:
+      213: -1431285698640887769
+    second: DashLine3_9
+  - first:
+      213: -9034172958571388469
+    second: DashLine3_10
+  - first:
+      213: 69929495694490770
+    second: DashLine3_11
+  - first:
+      213: -2620673713816644063
+    second: DashLine3_12
+  - first:
+      213: 3160153682156827393
+    second: DashLine3_13
+  - first:
+      213: 6325978513761616922
+    second: DashLine3_14
+  - first:
+      213: -2224560452371836950
+    second: DashLine3_15
+  - first:
+      213: 9062700125836828922
+    second: DashLine3_16
+  - first:
+      213: 814203750189297460
+    second: DashLine3_17
+  - first:
+      213: 838059704728965610
+    second: DashLine3_18
+  - first:
+      213: -3274067415165028643
+    second: DashLine3_19
+  - first:
+      213: 3795244913981400792
+    second: DashLine3_20
+  - first:
+      213: 6294416909406179928
+    second: DashLine3_21
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 110
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DashLine3_0
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 1263
+        width: 94
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf83a29a89a74dba0800000000000000
+      internalID: -6065088002069481221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_1
+      rect:
+        serializedVersion: 2
+        x: 1049
+        y: 1274
+        width: 94
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7135efbec17c1b7b0800000000000000
+      internalID: -5210164366858628329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_2
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 1203
+        width: 87
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e006e78dce06abd20800000000000000
+      internalID: 3295052647735648270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_3
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 1227
+        width: 90
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 618cdda4ccacde500800000000000000
+      internalID: 427220518448252950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_4
+      rect:
+        serializedVersion: 2
+        x: 648
+        y: 1106
+        width: 74
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951b15b312aa6c8d0800000000000000
+      internalID: -2826384656422555303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_5
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 1141
+        width: 80
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24473811c36986110800000000000000
+      internalID: 1254417680958714946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_6
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 979
+        width: 55
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8be5b86f9419d8040800000000000000
+      internalID: 4651533736998559416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_7
+      rect:
+        serializedVersion: 2
+        x: 1453
+        y: 1023
+        width: 62
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d509f48e383ec9ea0800000000000000
+      internalID: -5864562459065479075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_8
+      rect:
+        serializedVersion: 2
+        x: 515
+        y: 833
+        width: 32
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad419dd01784bb220800000000000000
+      internalID: 2502673668335277274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_9
+      rect:
+        serializedVersion: 2
+        x: 1535
+        y: 882
+        width: 40
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 720c9688d3d032ce0800000000000000
+      internalID: -1431285698640887769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_10
+      rect:
+        serializedVersion: 2
+        x: 509
+        y: 680
+        width: 14
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc1a9ec2f8b20a280800000000000000
+      internalID: -9034172958571388469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_11
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 731
+        width: 14
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29c313e718078f000800000000000000
+      internalID: 69929495694490770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_12
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 531
+        width: 39
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12651c7642f71abd0800000000000000
+      internalID: -2620673713816644063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_13
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 579
+        width: 31
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 103b99cd70f1bdb20800000000000000
+      internalID: 3160153682156827393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_14
+      rect:
+        serializedVersion: 2
+        x: 583
+        y: 400
+        width: 61
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a14c38911f36ac750800000000000000
+      internalID: 6325978513761616922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_15
+      rect:
+        serializedVersion: 2
+        x: 1488
+        y: 440
+        width: 54
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aef8ef60e06c021e0800000000000000
+      internalID: -2224560452371836950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_16
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 297
+        width: 78
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af0646a8fbd25cd70800000000000000
+      internalID: 9062700125836828922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_17
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 327
+        width: 73
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43fe2d83ff1ac4b00800000000000000
+      internalID: 814203750189297460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_18
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 231
+        width: 90
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae150f87cd261ab00800000000000000
+      internalID: 838059704728965610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_19
+      rect:
+        serializedVersion: 2
+        x: 1253
+        y: 248
+        width: 87
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd6386c580d2092d0800000000000000
+      internalID: -3274067415165028643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_20
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 208
+        width: 94
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d62875242b6ba430800000000000000
+      internalID: 3795244913981400792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DashLine3_21
+      rect:
+        serializedVersion: 2
+        x: 1105
+        y: 210
+        width: 94
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8521e5174d24a5750800000000000000
+      internalID: 6294416909406179928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DashLine3_0: -6065088002069481221
+      DashLine3_1: -5210164366858628329
+      DashLine3_10: -9034172958571388469
+      DashLine3_11: 69929495694490770
+      DashLine3_12: -2620673713816644063
+      DashLine3_13: 3160153682156827393
+      DashLine3_14: 6325978513761616922
+      DashLine3_15: -2224560452371836950
+      DashLine3_16: 9062700125836828922
+      DashLine3_17: 814203750189297460
+      DashLine3_18: 838059704728965610
+      DashLine3_19: -3274067415165028643
+      DashLine3_2: 3295052647735648270
+      DashLine3_20: 3795244913981400792
+      DashLine3_21: 6294416909406179928
+      DashLine3_3: 427220518448252950
+      DashLine3_4: -2826384656422555303
+      DashLine3_5: 1254417680958714946
+      DashLine3_6: 4651533736998559416
+      DashLine3_7: -5864562459065479075
+      DashLine3_8: 2502673668335277274
+      DashLine3_9: -1431285698640887769
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

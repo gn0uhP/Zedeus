@@ -1,0 +1,299 @@
+fileFormatVersion: 2
+guid: ef2ad75cc402ef2429f0c30fcedd4c28
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 175191870559911156
+    second: "\u2014Pngtree\u2014anime princess girl in floral_24133235_0"
+  - first:
+      213: -967475614814499185
+    second: "\u2014Pngtree\u2014anime princess girl in floral_24133235_1"
+  - first:
+      213: -982687418283073716
+    second: "\u2014Pngtree\u2014anime princess girl in floral_24133235_2"
+  - first:
+      213: -3339666693798015133
+    second: "\u2014Pngtree\u2014anime princess girl in floral_24133235_3"
+  - first:
+      213: 3540360460389161355
+    second: "\u2014Pngtree\u2014anime princess girl in floral_24133235_4"
+  - first:
+      213: -6193573278952975372
+    second: "\u2014Pngtree\u2014anime princess girl in floral_24133235_5"
+  - first:
+      213: 3902103808070300289
+    second: "\u2014Pngtree\u2014anime princess girl in floral_24133235_6"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014anime princess girl in floral_24133235_0"
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 0
+        width: 2053
+        height: 2484
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fc724cf3186e6200800000000000000
+      internalID: 175191870559911156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014anime princess girl in floral_24133235_1"
+      rect:
+        serializedVersion: 2
+        x: 1184
+        y: 2476
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8e0122ed06d292f0800000000000000
+      internalID: -967475614814499185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014anime princess girl in floral_24133235_2"
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 2470
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4fddf3effacc52f0800000000000000
+      internalID: -982687418283073716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014anime princess girl in floral_24133235_3"
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 1019
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36f47f716de17a1d0800000000000000
+      internalID: -3339666693798015133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014anime princess girl in floral_24133235_4"
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 982
+        width: 10
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b899552c413e12130800000000000000
+      internalID: 3540360460389161355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014anime princess girl in floral_24133235_5"
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 961
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f318a1fae10c0aa0800000000000000
+      internalID: -6193573278952975372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "\u2014Pngtree\u2014anime princess girl in floral_24133235_6"
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 12
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 182babc3dbe072630800000000000000
+      internalID: 3902103808070300289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "\u2014Pngtree\u2014anime princess girl in floral_24133235_0": 175191870559911156
+      "\u2014Pngtree\u2014anime princess girl in floral_24133235_1": -967475614814499185
+      "\u2014Pngtree\u2014anime princess girl in floral_24133235_2": -982687418283073716
+      "\u2014Pngtree\u2014anime princess girl in floral_24133235_3": -3339666693798015133
+      "\u2014Pngtree\u2014anime princess girl in floral_24133235_4": 3540360460389161355
+      "\u2014Pngtree\u2014anime princess girl in floral_24133235_5": -6193573278952975372
+      "\u2014Pngtree\u2014anime princess girl in floral_24133235_6": 3902103808070300289
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
