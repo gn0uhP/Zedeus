@@ -3,6 +3,7 @@ using System.Diagnostics.Contracts;
 using Unity.Cinemachine;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Splines;
 
 public class Player : MonoBehaviour
 {
@@ -22,6 +23,7 @@ public class Player : MonoBehaviour
     private float jumpTime;
     private float fallTime;
     private bool isJumping = false;
+    public bool airJumped = false;
     public bool isFacingRight = true;
     public float jumpForce;
     public float speed;
@@ -29,19 +31,21 @@ public class Player : MonoBehaviour
     public AnimationCurve gravityCurve;
 
     [Header("Hook")]
-    private HingeJoint2D hJoint;
     private LineRenderer lineRenderer;
     private int lastBestPosJoint = -1;
     private int lastBestPosSelected = -1;
     private int bestPos;
+    private float hookDistance;
+    private float hookTime;
     private float lastDistance;
     private float recentDistance;
     private Vector3 jointPos;
-    private bool sticked = false;
+    public AnimationCurve hookGravity;
+    public bool sticked = false;
     public GameObject anchor;
     public float ropeGravity = 2f;
     public float airGravity = 1.5f;
-    public float factorX = 1.2f;
+    public float factorX = 1.5f;
     public float factorY = 1f;
 
     [Header("LightingDash")]
@@ -65,10 +69,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        hJoint = GetComponent<HingeJoint2D>();
         lineRenderer = GetComponent<LineRenderer>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        hJoint.enabled = false;
         OnInit();
     }
 
@@ -84,16 +86,19 @@ public class Player : MonoBehaviour
             return;
         }
 
-
-        //Jump
-        isGrounded = CheckGround();
-
         if (Input.GetKey(KeyCode.R))
         {
             LevelReset();
         }
+
+        //Jump
+        isGrounded = CheckGround();
+
+        
         if (isGrounded)
         {
+            airJumped = false;
+
             fallTime = 0f;
             rb.gravityScale = 1.5f;
             if (Input.GetKeyDown(KeyCode.Space))
@@ -108,10 +113,10 @@ public class Player : MonoBehaviour
 
         if (isJumping && !sticked)
         {
-            OnJumping();
+            StartCoroutine(OnJumping());
         }
 
-        if(Input.GetKeyUp(KeyCode.Space) && !sticked && isJumping)
+        if(Input.GetKeyUp(KeyCode.Space) && !sticked && isJumping && !canWallJump)
         {
             if(rb.linearVelocityY > 0.1f)
             {
@@ -121,20 +126,26 @@ public class Player : MonoBehaviour
             rb.gravityScale = airGravity;
             
         }
+
         if(rb.linearVelocityY < 0.1 && !canWallJump)
         {
             fallTime += Time.deltaTime;
             Falling();
         }
-        
-        
+
+        CheckInput();  
+
+    }
+
+    private void FixedUpdate()
+    {
 
         //hook
         bestPos = -1;
 
-            lastDistance = float.MaxValue;
+        lastDistance = float.MaxValue;
 
-        for(int i = 0; i < anchor.transform.childCount; i++)
+        for (int i = 0; i < anchor.transform.childCount; i++)
         {
             recentDistance = Vector2.Distance(transform.position, anchor.transform.GetChild(i).position);
             if (recentDistance < lastDistance && recentDistance < anchor.transform.GetChild(i).GetComponent<Anchor>().jointRadius)
@@ -149,34 +160,57 @@ public class Player : MonoBehaviour
 
         dashDirection = Vector3.zero;
         bestBall = -1;
-        for(int i = 0; i < lightBall.transform.childCount; i++)
+        for (int i = 0; i < lightBall.transform.childCount; i++)
         {
             recentDistance = Vector2.Distance(transform.position, lightBall.transform.GetChild(i).transform.position);
-            if(recentDistance < lightBall.transform.GetChild(i).GetComponent<LightBall>().jointRadius)
+            if (recentDistance < lightBall.transform.GetChild(i).GetComponent<LightBall>().jointRadius)
             {
                 dashDirection = (lightBall.transform.GetChild(i).transform.position - transform.position).normalized;
                 bestBall = i;
-                
+
             }
         }
 
-        CheckInput();
 
 
+        lastBestPosSelected = bestPos;
+        lastBall = bestBall;
 
+        if (sticked)
+        {
+            hookTime += Time.deltaTime;
+            if (hookTime < 1f)
+            {
+                rb.gravityScale = hookGravity.Evaluate(hookTime);
+            }
+            else
+            {
+                rb.gravityScale = hookGravity.Evaluate(1f);
+            }
+
+            Vector2 stringVector = rb.position - (Vector2)jointPos;
+            Vector2 dir = stringVector.normalized;
+
+            Vector2 tiepTuyen = new Vector2(-dir.y, dir.x);
+
+            rb.position = (Vector2)jointPos + dir * hookDistance;
+
+            float swingVelocity = Vector2.Dot(rb.linearVelocity, tiepTuyen);
+
+            rb.linearVelocity = tiepTuyen * swingVelocity;
+        }
+    }
+
+    private void LateUpdate()
+    {
         if (sticked)
         {
             lineRenderer.SetPosition(0, transform.position);
             lineRenderer.SetPosition(1, anchor.transform.GetChild(lastBestPosSelected).transform.position);
 
         }
-
-        
-        lastBestPosSelected = bestPos;
-        lastBall = bestBall;
-
     }
-    
+
     private void OnInit()
     {
         spawnPos = transform.position;
@@ -200,15 +234,23 @@ public class Player : MonoBehaviour
 
     private void CheckInput()
     {
+        //double jump
+        if (Input.GetKeyDown(KeyCode.Space) && dashDirection == Vector3.zero && bestPos == -1 && airJumped == false && isGrounded == false)
+        {
+            StopCoroutine(OnJumping());
+            airJumped = true;
+            rb.linearVelocity = new Vector2(rb.linearVelocityX * 1.1f, jumpForce);
+            StartCoroutine(OnJumping());
+        }
+        //hook
         if (Input.GetKeyDown(KeyCode.Space) && bestPos != -1 && !sticked)
         {
-            
+            hookTime = 0f;
             lineRenderer.enabled = true;
-            hJoint.enabled = true;
             rb.gravityScale = ropeGravity;
-            hJoint.connectedBody = anchor.transform.GetChild(bestPos).transform.GetChild(0).GetComponent<Rigidbody2D>();
-            
             jointPos = anchor.transform.GetChild(bestPos).transform.position;
+            hookDistance = Vector2.Distance(transform.position, jointPos);
+            
 
             lastBestPosJoint = bestPos;
             rb.angularVelocity = 0f;
@@ -216,22 +258,23 @@ public class Player : MonoBehaviour
         }
         if (Input.GetKeyUp(KeyCode.Space) && sticked)
         {
-            hJoint.enabled = false;
             lineRenderer.enabled = false;
             rb.linearVelocity = new Vector2(rb.linearVelocityX * factorX, rb.linearVelocityY * factorY);
             rb.gravityScale = airGravity;
+
 
             rb.AddTorque(-rb.linearVelocity.magnitude);
             sticked = !sticked;
 
         }
-
+        //dash
         if (Input.GetKeyDown(KeyCode.Space) && dashDirection != Vector3.zero && bestBall != -1 && dashed == false) 
         {
             rb.linearVelocity = dashDirection * lightBall.transform.GetChild(bestBall).GetComponent<LightBall>().dashForce;
             dashed = true;
             StartCoroutine(Dashing());
         }
+
     }
     private bool CheckGround()
     {
@@ -260,15 +303,15 @@ public class Player : MonoBehaviour
         jumpTime = 0f;
     }
 
-    private void OnJumping()
+    IEnumerator OnJumping()
     {
         jumpTime += Time.fixedDeltaTime;
-        if(jumpTime <= 1f)
+        while(jumpTime <= 1f)
         {
             rb.gravityScale = gravityCurve.Evaluate(jumpTime);
-            
+            yield return null;
         }
-        else
+        if(jumpTime > 1f)
         {
             isJumping = false;
             rb.gravityScale = airGravity;
@@ -284,20 +327,23 @@ public class Player : MonoBehaviour
 
     IEnumerator Dashing()
     {
+
+        float dashTime = lightBall.transform.GetChild(bestBall).GetComponent<LightBall>().jointRadius / lightBall.transform.GetChild(bestBall).GetComponent<LightBall>().dashForce * 2f;
         float time = 0f;
-        float dashTime = 0.5f;
-        while (time <=  dashTime)
+        while (time <= dashTime)
         {
             time += Time.deltaTime;
             rb.gravityScale = 0f;
             yield return null;
         }
 
-        if(time > dashTime)
+        if (time > dashTime)
         {
             dashed = false;
             rb.gravityScale = airGravity;
+            rb.linearVelocity = rb.linearVelocity * 0.5f;
         }
+
     }
 
 
